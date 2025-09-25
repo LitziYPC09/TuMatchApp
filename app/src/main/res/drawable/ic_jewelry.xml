@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="?attr/colorControlNormal">
+
+    <!-- Diamante principal -->
+    <path
+        android:fillColor="@color/primary"
+        android:pathData="M12,2L3,9.5L12,22L21,9.5L12,2zM12,17L6.5,9.5L12,4.5L17.5,9.5L12,17z"/>
+
+    <!-- Detalles del diamante -->
+    <path
+        android:fillColor="@color/primary"
+        android:pathData="M12,7L8.5,9.5L12,15L15.5,9.5L12,7z"/>
+</vector>
+

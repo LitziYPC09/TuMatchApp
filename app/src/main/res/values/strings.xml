@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">TuMatchApp_prueba</string>
+    <string name="welcome_user">Bienvenido, %1$s</string>
+    <string name="ingrese_correo_contrasena">Ingrese correo y contraseña</string>
+    <string name="correo_incorrecto">Correo o contraseña incorrectos</string>
+
+    <!-- Preferences strings -->
+    <string name="pref_title">¿Qué estás buscando hoy?</string>
+    <string name="pref_subtitle">Cuéntanos tus preferencias</string>
+    <string name="pref_hint">Escribe lo que buscas...</string>
+    <string name="pref_categories">Categorías</string>
+    <string name="cat_electronics">Electrónica</string>
+    <string name="cat_clothing_men">Ropa (Hombre)</string>
+    <string name="cat_clothing_women">Ropa (Mujer)</string>
+    <string name="cat_food">Alimentos</string>
+    <string name="cat_jewelry">Joyería</string>
+    <string name="search_recs">Buscar Recomendaciones</string>
+    <string name="back_home">Volver al inicio</string>
+
+    <!-- content descriptions -->
+    <string name="cd_electronics">Icono Electrónica</string>
+    <string name="cd_clothing_men">Icono Ropa Hombre</string>
+    <string name="cd_clothing_women">Icono Ropa Mujer</string>
+    <string name="cd_food">Icono Alimentos</string>
+    <string name="cd_jewelry">Icono Joyería</string>
+</resources>
