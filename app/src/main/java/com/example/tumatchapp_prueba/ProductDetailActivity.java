@@ -49,7 +49,7 @@ public class ProductDetailActivity extends AppCompatActivity {
         Glide.with(this)
                 .load(image)
                 .centerCrop()
-                .placeholder(R.mipmap.ic_launcher)
+                .placeholder(R.mipmap.ic_launcherv2)
                 .into(img);
 
         // Botón para volver a categorías

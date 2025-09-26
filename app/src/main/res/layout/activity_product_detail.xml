@@ -35,7 +35,7 @@
                 android:layout_height="260dp"
                 android:scaleType="centerCrop"
                 android:contentDescription="Imagen del producto"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@mipmap/ic_launcherv2" />
 
             <TextView
                 android:id="@+id/tvTitle"

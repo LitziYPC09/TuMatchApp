@@ -10,12 +10,12 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/tumatchapp"
         android:label="TuMatchApp"
         android:roundIcon="@drawable/tumatchapp"
         android:supportsRtl="true"
         android:theme="@style/Theme.TuMatchApp"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+        android:icon="@drawable/tumatchapp">
         <activity
             android:name=".MainActivity"
             android:exported="true">

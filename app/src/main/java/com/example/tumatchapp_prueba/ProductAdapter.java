@@ -75,7 +75,7 @@ public class ProductAdapter extends ListAdapter<Product, ProductAdapter.ViewHold
         Glide.with(ctx)
                 .load(p.image)
                 .centerCrop()
-                .placeholder(R.mipmap.ic_launcher)
+                .placeholder(R.mipmap.ic_launcherv2)
                 .into(holder.img);
 
         // Usar el botón "Ver más" para abrir el detalle
