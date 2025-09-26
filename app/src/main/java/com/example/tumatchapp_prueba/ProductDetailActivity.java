@@ -52,16 +52,16 @@ public class ProductDetailActivity extends AppCompatActivity {
                 .placeholder(R.mipmap.ic_launcher)
                 .into(img);
 
-        // Botón para volver a categorías (ahora abre CategoryHostActivity)
+        // Botón para volver a categorías
         MaterialButton btnBackCategories = findViewById(R.id.btnBackCategories);
         if (btnBackCategories != null) {
             btnBackCategories.setOnClickListener(v -> {
-                Intent i = new Intent(this, CategoryHostActivity.class);
-                if (category != null) i.putExtra(CategoryHostActivity.EXTRA_CATEGORY, category);
+                Intent i = new Intent(ProductDetailActivity.this, HomeActivity.class);
                 startActivity(i);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 finish();
             });
         }
+
     }
 }

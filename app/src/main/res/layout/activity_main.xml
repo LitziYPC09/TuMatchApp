@@ -11,77 +11,87 @@
 
     <LinearLayout
         android:id="@+id/centerColumn"
-        android:orientation="vertical"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/btnComenzar"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.25">
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.458">
 
         <View
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:backgroundTint="@color/primaryContainer"
+            android:layout_gravity="center"
             android:background="@drawable/circle_bg"
-            android:layout_gravity="center" />
+            android:backgroundTint="@color/primaryContainer" />
 
         <ImageView
             android:id="@+id/imgLogo"
             android:layout_width="72dp"
             android:layout_height="72dp"
-            android:src="@mipmap/ic_launcher"
-            android:contentDescription="Logo"
             android:layout_marginTop="-96dp"
+            android:contentDescription="Logo"
+            android:src="@mipmap/ic_launcher"
             android:tint="@color/primary" />
 
         <TextView
             android:id="@+id/tvWelcome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bienvenido a la App de Recomendaciones"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:gravity="center"
             android:layout_marginTop="18dp"
-            android:textColor="@color/onBackground" />
+            android:gravity="center"
+            android:text="Bienvenido a la App de Recomendaciones"
+            android:textColor="@color/onBackground"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tvSubtitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Descubre productos perfectos para ti con recomendaciones personalizadas"
-            android:textSize="14sp"
+            android:layout_marginTop="33dp"
             android:gravity="center"
-            android:layout_marginTop="12dp"
-            android:textColor="@color/onBackground" />
+            android:text="Descubre productos perfectos para ti con recomendaciones personalizadas"
+            android:textColor="@color/onBackground"
+            android:textSize="14sp" />
 
     </LinearLayout>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnComenzar"
-        style="@style/AppButton"
-        android:layout_width="0dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
         android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="12dp"
         android:text="Comenzar"
-        app:backgroundTint="@color/primary"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="16sp"
+        app:cornerRadius="28dp"
         app:layout_constraintBottom_toTopOf="@+id/btnLogout"
-        android:layout_marginTop="24dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/primary"
+        app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnLogout"
-        style="@style/Widget.MaterialComponents.Button"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="112dp"
         android:text="Cerrar sesión"
-        app:backgroundTint="@color/secondary"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="16sp"
+        app:cornerRadius="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginTop="12dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/accent"
+        app:strokeWidth="2dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

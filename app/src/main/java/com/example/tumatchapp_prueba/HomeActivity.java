@@ -32,7 +32,7 @@ public class HomeActivity extends AppCompatActivity {
         cardElectronics = findViewById(R.id.cardElectronics);
         cardClothingMen = findViewById(R.id.cardClothingMen);
         cardClothingWomen = findViewById(R.id.cardClothingWomen);
-        cardFood = findViewById(R.id.cardFood);
+       //cardFood = findViewById(R.id.cardFood);
         cardJewelry = findViewById(R.id.cardJewelry);
 
         // Click listeners para las tarjetas: seleccionar categoría y marcar visualmente
@@ -85,17 +85,7 @@ public class HomeActivity extends AppCompatActivity {
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
         });
 
-        cardFood.setOnClickListener(v -> {
-            // marcar visualmente
-            selectCategory("food", cardFood);
-            // iniciar ResultsActivity con la categoría
-            Intent i = new Intent(this, ResultsActivity.class);
-            i.putExtra("query", "");
-            i.putExtra("category", "food");
-            startActivity(i);
-            // animación coherente con el resto
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-        });
+
 
         // Preselección si vienen desde ResultsActivity o ProductDetailActivity
         String pre = getIntent().getStringExtra("selected_category");
@@ -116,10 +106,7 @@ public class HomeActivity extends AppCompatActivity {
                 case "women's":
                     selectCategory("women's clothing", cardClothingWomen);
                     break;
-                case "food":
-                case "alimentos":
-                    selectCategory("food", cardFood);
-                    break;
+
                 default:
                     // no preselection
                     break;
@@ -154,7 +141,7 @@ public class HomeActivity extends AppCompatActivity {
         cardElectronics.setStrokeColor(defaultStroke);
         cardClothingMen.setStrokeColor(defaultStroke);
         cardClothingWomen.setStrokeColor(defaultStroke);
-        cardFood.setStrokeColor(defaultStroke);
+       // cardFood.setStrokeColor(defaultStroke);
         cardJewelry.setStrokeColor(defaultStroke);
 
         // marcar la tarjeta seleccionada
@@ -165,7 +152,7 @@ public class HomeActivity extends AppCompatActivity {
         if (clicked != cardElectronics) cardElectronics.setCardBackgroundColor(ContextCompat.getColor(this, R.color.surface));
         if (clicked != cardClothingMen) cardClothingMen.setCardBackgroundColor(ContextCompat.getColor(this, R.color.surface));
         if (clicked != cardClothingWomen) cardClothingWomen.setCardBackgroundColor(ContextCompat.getColor(this, R.color.surface));
-        if (clicked != cardFood) cardFood.setCardBackgroundColor(ContextCompat.getColor(this, R.color.surface));
+       // if (clicked != cardFood) cardFood.setCardBackgroundColor(ContextCompat.getColor(this, R.color.surface));
         if (clicked != cardJewelry) cardJewelry.setCardBackgroundColor(ContextCompat.getColor(this, R.color.surface));
 
         // animación de selección (scale up)

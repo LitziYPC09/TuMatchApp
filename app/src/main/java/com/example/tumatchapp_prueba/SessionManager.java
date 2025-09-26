@@ -14,7 +14,7 @@ public class SessionManager {
     private static final String PREF_NAME = "app_prefs";
     private static final String KEY_LOGGED = "logged_in";
     private static final String KEY_USER = "logged_user";
-    private static final String KEY_USERS_DB = "users_db"; // JSON map email->passwordHash
+    private static final String KEY_USERS_DB = "users_db";
 
     private final SharedPreferences prefs;
 

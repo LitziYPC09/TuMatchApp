@@ -77,9 +77,17 @@
                 android:id="@+id/btnBackCategories"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:text="Volver a categorías"
-                app:backgroundTint="@color/secondary"
-                android:layout_marginTop="20dp" />
+                android:textColor="@color/accent"
+                android:textSize="16sp"
+                app:cornerRadius="28dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="@color/accent"
+                app:strokeWidth="2dp"
+                android:backgroundTint="@color/background" />
+
+
 
         </LinearLayout>
 

@@ -50,15 +50,17 @@ public class ResultsActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
         tvEmpty = findViewById(R.id.tvEmpty);
 
+        // Dentro del método onCreate() de ResultsActivity.java
+
         // Nuevo botón para volver a categorías
         findViewById(R.id.btnBackCategories).setOnClickListener(v -> {
-            Intent i = new Intent(this, CategoryHostActivity.class);
+            Intent i = new Intent(this, HomeActivity.class);
             // pasar la categoría actual para que quede preseleccionada
-            if (category != null) i.putExtra(CategoryHostActivity.EXTRA_CATEGORY, category);
+           // if (category != null) i.putExtra(CategoryHostActivity.EXTRA_CATEGORY, category);
             // No limpiar el stack para que el usuario pueda volver atrás si desea
             startActivity(i);
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-            finish();
+            finish(); // Cierra ResultsActivity
         });
 
         query = getIntent().getStringExtra("query");
