@@ -11,11 +11,11 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:label="TuMatchApp"
-        android:roundIcon="@drawable/tumatchapp"
+        android:roundIcon="@mipmap/ic_launcherv2"
         android:supportsRtl="true"
         android:theme="@style/Theme.TuMatchApp"
         android:usesCleartextTraffic="true"
-        android:icon="@drawable/tumatchapp">
+        android:icon="@mipmap/ic_launcherv2">
         <activity
             android:name=".MainActivity"
             android:exported="true">

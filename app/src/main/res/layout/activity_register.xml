@@ -26,8 +26,8 @@
             android:layout_height="254dp"
             android:layout_marginTop="-45dp"
             android:contentDescription="Logo"
-            android:src="@drawable/tumatchapp"
-            android:tint="@color/primary" />
+            android:src="@mipmap/ic_launcherv2"
+           />
         <!-- Título -->
         <TextView
             android:id="@+id/tvTitle"

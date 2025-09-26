@@ -215,7 +215,7 @@
                     <ImageView
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:src="@drawable/ic_jewelry"
+                        android:src="@drawable/ic_clothing_men"
                         android:layout_marginBottom="8dp"/>
 
                     <TextView
