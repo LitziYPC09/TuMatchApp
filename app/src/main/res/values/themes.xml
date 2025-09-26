@@ -20,5 +20,5 @@
         <item name="materialButtonStyle">?attr/materialButtonStyle</item>
     </style>
 
-    <style name="Theme.TuMatchApp_prueba" parent="Base.Theme.TuMatchApp_prueba" />
+    <style name="Theme.TuMatchApp" parent="Base.Theme.TuMatchApp_prueba" />
 </resources>

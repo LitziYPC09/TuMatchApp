@@ -21,6 +21,15 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <!-- Título -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="1500dp"
+            android:layout_height="254dp"
+            android:layout_marginTop="-45dp"
+            android:contentDescription="Logo"
+            android:src="@drawable/tumatchapp"
+            android:tint="@color/primary" />
+
         <TextView
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"

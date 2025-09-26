@@ -27,15 +27,15 @@
             android:layout_height="120dp"
             android:layout_gravity="center"
             android:background="@drawable/circle_bg"
-            android:backgroundTint="@color/primaryContainer" />
+            android:backgroundTint="@color/onPrimaryContainer" />
 
         <ImageView
             android:id="@+id/imgLogo"
-            android:layout_width="72dp"
-            android:layout_height="72dp"
-            android:layout_marginTop="-96dp"
+            android:layout_width="1200dp"
+            android:layout_height="172dp"
+            android:layout_marginTop="-145dp"
             android:contentDescription="Logo"
-            android:src="@mipmap/ic_launcher"
+            android:src="@drawable/tumatchapp"
             android:tint="@color/primary" />
 
         <TextView
