@@ -42,8 +42,16 @@ dependencies {
     // Glide para carga y cache de imágenes
     implementation(libs.glide)
     implementation("androidx.gridlayout:gridlayout:1.0.0")
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    // Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+// Converter para JSON usando Gson
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+
 }
